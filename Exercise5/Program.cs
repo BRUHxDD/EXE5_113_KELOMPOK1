@@ -10,9 +10,9 @@ namespace Exercise5
     {
         class Node
         {
-            public int TF;
+            public string TF;
             public Node next;
-            public Node(int tf)
+            public Node(string tf)
             {
                 TF = tf;
             }
@@ -69,7 +69,25 @@ namespace Exercise5
         static void Main(string[] args)
         {
             QueueLinkedList q = new QueueLinkedList();
-
+            while (true)
+            {
+                Console.WriteLine("\nStack Menu");
+                Console.WriteLine("1. Insert");
+                Console.WriteLine("2. Delete");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.WriteLine("\nEntoer your choice: ");
+                string input = Console.ReadLine();
+                char ch = Convert.ToChar(input == "" ? "0" : input);
+                switch (ch)
+                {
+                    case '1':
+                        Console.WriteLine("\nEnter your alfabeth: ");
+                        string num = Convert.ToString(Console.ReadLine());
+                        q.insert(num);
+                        break;
+                }
+            }
         }
     }
 }
