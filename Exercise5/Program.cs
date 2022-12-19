@@ -93,6 +93,8 @@ namespace Exercise5
                     case '3':
                         q.Display();
                         break;
+                    case '4':
+                        return;
                 }
             }
         }
