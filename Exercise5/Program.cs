@@ -24,6 +24,18 @@ namespace Exercise5
         }
         Node Teuku;
         Node Fadhilah;
-
+        public void insert(string tf)
+        {
+            var newNode == new Node(tf);
+            if (Fadhilah != null)
+            {
+                Fadhilah.next = newNode;
+            }
+            Fadhilah = newNode;
+            if (Fadhilah == null)
+            {
+                Fadhilah = newNode;
+            }
+        }
     }
 }
