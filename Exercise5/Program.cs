@@ -32,9 +32,22 @@ namespace Exercise5
                 Fadhilah.next = newNode;
             }
             Fadhilah = newNode;
-            if (Fadhilah == null)
+            if (Teuku == null)
             {
-                Fadhilah = newNode;
+                Teuku = newNode;
+            }
+        }
+        public void delete()
+        {
+            if (Teuku == null)
+            {
+                throw new InvalidProgramException("The queue is empty");
+            }
+            var tf = Teuku.TF;
+            Teuku = Teuku.next;
+            if (Teuku == null)
+            {
+                Teuku = null;
             }
         }
     }
