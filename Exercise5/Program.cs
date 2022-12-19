@@ -76,7 +76,7 @@ namespace Exercise5
                 Console.WriteLine("2. Delete");
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. Exit");
-                Console.WriteLine("\nEntoer your choice: ");
+                Console.WriteLine("\nEnter your choice: ");
                 string input = Console.ReadLine();
                 char ch = Convert.ToChar(input == "" ? "0" : input);
                 switch (ch)
