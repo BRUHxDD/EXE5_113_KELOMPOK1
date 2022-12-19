@@ -17,5 +17,13 @@ namespace Exercise5
                 TF = tf;
             }
         }
+        bool empty()
+        {
+            if (Teuku == null)
+                return (true); else return (false);
+        }
+        Node Teuku;
+        Node Fadhilah;
+
     }
 }
