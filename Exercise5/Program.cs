@@ -26,7 +26,7 @@ namespace Exercise5
         Node Fadhilah;
         public void insert(string tf)
         {
-            var newNode == new Node(tf);
+            var newNode = new Node(tf);
             if (Fadhilah != null)
             {
                 Fadhilah.next = newNode;
@@ -49,6 +49,27 @@ namespace Exercise5
             {
                 Teuku = null;
             }
+        }
+        public void Display()
+        {
+            Node tmp;
+            if (empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                for (tmp = Teuku; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.TF);
+                }
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            QueueLinkedList q = new QueueLinkedList();
+
         }
     }
 }
